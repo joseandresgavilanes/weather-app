@@ -1,0 +1,84 @@
+
+h2{
+    font-size: 40px;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_container{
+    color: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #355764;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+
+.cloud_component{
+    display: flex;
+    gap: 1em;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cloud_component p:nth-child(1){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+}
+.cloud_component p:nth-child(2){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: -30px;
+    bottom: -40px;
+}
+.cloud_component p:nth-child(3){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: -30px;
+    bottom: -10px;
+}
+.cloud_component p:nth-child(4){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+    top: -20px;
+}
+.cloud_component p:nth-child(5){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+}
+.cloud_component p:nth-child(6){
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}

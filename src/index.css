@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --main-color: #7ac9f0;
+    --secondary_color: #8dd2f5 ;
+    --tex_color: #395B64;
+    --alternative_color: white;
+
+    --sunny_background: url(https://thumbs.dreamstime.com/b/tropical-beach-palm-trees-sea-summer-resort-sunset-clouds-tropical-beach-palm-trees-sea-summer-resort-104589206.jpg);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style:none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    color:var(--tex_color);
+    background-image: url(../public/background_rainy.webp)
+    
+}
+
+.App{
+    width: 300px;
+    height: 500px;
+}
+
+
+.principalContainer{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+
+h1{
+    height: 20%;
+    font-size: 30px;
+    /* padding: 20px 20px 20px 0; */
+}
+
+
+
+.main_info{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.weather_info{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    height: 80%;
+}
+
+
+
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100%
+    
+}
+
+/*TEMPERATURE NUMBER*/
+
+.temperature{
+    height: 25%;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+/*CHANGE °C / °F BUTTON*/
+.change_temperature{
+    font-family: 'Baloo 2', cursive;
+    background-color: var(--secondary_color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    border-radius: 10px;   
+    color: var(--alternative_color);
+    opacity: 70%;
+    border: none;
+    font-size: 15px;
+    font-weight: 500; 
+    height: 15%;
+    gap: .5em;
+    /* height: 10%; */
+}
+.weather_image{
+    height: 50%;
+}
+
+/* BOTTOM PART */
+
+ul{
+    
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    height: 35%;
+}
+
+li{
+    background-color: var(--secondary_color);
+    width: 33.33%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+.data_li{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.fa-solid{
+    font-size: 30px;
+    color: white;
+    opacity: 70%;
+}
+
+.title_small_card_weather{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa-location-dot{
+    color: var(--tex_color);
+    font-size: 20px;
+    
+    /* padding: 20px 20px 20px 0; */
+}
+
+.fa-repeat{
+    font-size: 15px;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 800px) {
+    
+    .App{
+    
+        width: 700px;
+        height: 550px;
+        padding: 40px;
+    }
+
+
+    .principalContainer{
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--main-color);
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    .main_info{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: none;
+    }
+    ul{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 100%;
+    }
+    li{
+        background-color: var(--secondary_color);
+        height: 30%;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        opacity: 80%;
+    }
+
+    
+    h1{
+    height: 20%;
+    font-size: 30px;
+    /* padding: 20px 20px 20px 0; */
+    }
+
+
+    .weather_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    gap: none;
+    }
+
+
+
+    h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 10%;
+    font-size: 20px;
+    
+    }
+
+/*TEMPERATURE NUMBER*/
+
+    .temperature{
+    height: 20%;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+/*CHANGE °C / °F BUTTON*/
+.change_temperature{
+    font-family: 'Baloo 2', cursive;
+    background-color: var(--secondary_color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    border-radius: 10px;   
+    color: var(--alternative_color);
+    opacity: 70%;
+    border: none;
+    font-size: 20px;
+    font-weight: 500; 
+    height: 15%;
+    gap: .5em;
+    /* height: 10%; */
+}
+.weather_image{
+    height: 45%;
+}
+
+    
+  }
